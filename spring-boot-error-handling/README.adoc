@@ -1,0 +1,15 @@
+== Project demonstrating Errorhandling Problem in Spring Boot 2.0.1.RELEASE
+
+This project demonstrates the issue described here: https://github.com/spring-projects/spring-boot/issues/12787
+
+To see the issue run:
+
+. mvn clean install docker:build docker:run
+. curl http://localhost:8080/springboot/test
+. html will be returned 
+
+You can switch spring boot version back to 2.0.0.RELEASE in pom and run:
+
+. mvn clean install docker:build docker:run
+. curl http://localhost:8080/springboot/test
+. json will be returned 
